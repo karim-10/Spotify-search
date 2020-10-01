@@ -1,0 +1,23 @@
+<%-include('./partials/head.ejs')  %>
+
+<body>
+    <%-include('./partials/navigation') %>
+
+    <section id="track">
+        <% artistsTrack.forEach(element => { %>
+        <article class="tracks">
+            <h1><%= element.name %> </h1>
+            <audio controls src="<%= element.preview_url %> ">
+                Your browser does not support the
+                <code>audio</code> element.
+            </audio>
+        </article>
+        <% }) %>
+    </section>
+
+
+    <%-include('./partials/footer') %>
+
+</body>
+
+</html>

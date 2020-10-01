@@ -1,0 +1,16 @@
+<%-include('./partials/head.ejs')  %>
+
+<body>
+    <%-include('./partials/navigation') %>
+    <section class="se1">
+        <form action="/artist-search" method="GET">
+            <input type="search" name="q" size="50" id="">
+            <input type="submit" value="Search for an Artist">
+        </form>
+    </section>
+
+
+    <%-include('./partials/footer') %>
+</body>
+
+</html>

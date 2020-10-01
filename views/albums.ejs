@@ -1,0 +1,23 @@
+<%-include('./partials/head.ejs')  %>
+
+<body>
+    <%-include('./partials/navigation') %>
+
+    <section class="artistSection">
+        <% artistsAlbum.forEach(element => { %>
+        <article class="artistArticle">
+            <% if (element.images.length != 0) { %>
+            <img src="<%= element.images[0].url %> " alt="">
+            <% } %>
+            <h2><%=element.name%> </h2>
+            <a href="/titleListe/<%=element.id%>">View Tracks</a>
+
+        </article>
+        <% }) %>
+    </section>
+
+
+    <%-include('./partials/footer') %>
+</body>
+
+</html>

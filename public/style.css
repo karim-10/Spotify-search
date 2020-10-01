@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.se1 {
+  height: 90vh;
+  background: url("/spotify-background.svg") center/cover no-repeat;
+}
+
+body nav {
+  height: 5vh;
+  background-color: #020202;
+}
+body nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+body nav ul li:nth-of-type(1) img {
+  width: 20px;
+  padding: 5px 0 5px 50px;
+  margin-right: 5px;
+}
+
+body nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+body nav ul a:hover {
+  color: palegreen;
+  font-size: 20px;
+}
+body form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+input[type="search"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: tomato;
+}
+
+footer {
+  height: 5vh;
+  background-color: #000;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer ul li {
+  padding: 0 20px;
+  line-height: 40px;
+}
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  color: palegreen;
+  text-decoration: none;
+}
+
+.artistSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 5% 5%;
+  background-color: rgb(35, 35, 35);
+}
+
+.artistArticle {
+  height: 550px;
+  text-align: center;
+  background-color: rgb(73, 73, 73);
+}
+.artistArticle img {
+  width: 100%;
+}
+.artistArticle > h2 {
+  padding: 20px 0;
+  color: white;
+}
+.artistArticle a {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: red;
+  margin-top: 50px;
+  color: white;
+  border-radius: 5px;
+}
+.artistArticle a:hover {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: white;
+  margin-top: 50px;
+  color: red;
+}
+#track {
+  background-color: rgb(35, 35, 35);
+  padding: 3vh 7%;
+  height: 84vh;
+  overflow: scroll;
+}
+.tracks {
+  background-color: rgb(73, 73, 73);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 80px;
+  padding: 0 3%;
+  border-radius: 50px;
+}
+.tracks h1 {
+  color: wheat;
+  font-size: 20px;
+}
